@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Somatic Flow</title>
-  <meta name="description" content="Privacy policy for the Somatic Flow app and website." />
+  <title>Somatic Flow</title>
+  <meta name="description" content="A guided somatic body scan for Android that pendulates between tension and ease, with hand connection and gentle humming." />
+  <meta property="og:title" content="Somatic Flow" />
+  <meta property="og:description" content="A guided somatic body scan for Android that pendulates between tension and ease." />
+  <meta property="og:image" content="logo.png" />
   <meta name="theme-color" content="#0a0e17" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
@@ -12,80 +15,63 @@
       --bg: #0a0e17;
       --text: #d1d5db;
       --muted: #9ca3af;
+      --faint: #6b7280;
       --heading: #f3f4f6;
       --accent: #f59e0b;
+      --card: rgba(255, 255, 255, 0.03);
       --rule: rgba(255, 255, 255, 0.08);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: var(--bg);
+      background: radial-gradient(ellipse at 50% 0%, #16213a 0%, var(--bg) 55%) no-repeat, var(--bg);
       color: var(--text);
       font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     }
-    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
-    h1 { color: var(--heading); font-size: 1.9rem; margin: 0 0 4px; }
-    h2 { color: var(--heading); font-size: 1.2rem; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--rule); }
-    .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 28px; }
-    .summary { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; margin: 0 0 8px; }
-    a { color: var(--accent); }
-    ul { padding-left: 1.25rem; }
-    li { margin: 4px 0; }
-    .back { display: inline-block; margin-top: 40px; font-size: 0.95rem; }
+    main { max-width: 680px; margin: 0 auto; padding: 56px 16px 40px; text-align: center; }
+    .logo { width: 160px; height: 160px; filter: drop-shadow(0 0 40px rgba(245, 158, 11, 0.18)); }
+    h1 { color: var(--heading); font: 600 2.2rem/1.2 Georgia, "Times New Roman", serif; margin: 24px 0 8px; letter-spacing: 0.01em; }
+    .tagline { color: var(--accent); margin: 0 0 28px; }
+    .lead { color: var(--text); margin: 0 auto 28px; max-width: 34rem; }
+    .play {
+      display: inline-block; padding: 12px 22px; border-radius: 10px;
+      border: 1px solid rgba(245, 158, 11, 0.35); background: rgba(245, 158, 11, 0.1);
+      color: var(--accent); font-weight: 600; text-decoration: none;
+    }
+    a.play:hover { background: rgba(245, 158, 11, 0.18); }
+    .note { color: var(--faint); font-size: 0.85rem; margin: 10px 0 0; }
+    .features { text-align: left; display: grid; gap: 12px; margin: 44px 0 0; padding: 0; list-style: none; }
+    .features li { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; }
+    .features strong { color: var(--heading); display: block; margin-bottom: 2px; }
+    .features span { color: var(--muted); font-size: 0.95rem; }
+    .notice { text-align: left; color: var(--muted); font-size: 0.9rem; border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 40px 0 0; }
+    footer { color: var(--faint); font-size: 0.85rem; text-align: center; padding: 24px 16px 40px; border-top: 1px solid var(--rule); max-width: 680px; margin: 0 auto; }
+    footer a { color: var(--muted); }
   </style>
 </head>
 <body>
   <main>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Somatic Flow · Effective October 13, 2026</p>
+    <img class="logo" src="logo.png" alt="Somatic Flow emblem: a figure with glowing points along the spine and three golden waves" width="160" height="160" />
+    <h1>Somatic Flow</h1>
+    <p class="tagline">A guided somatic body scan for Android</p>
+    <p class="lead">A 26-minute practice that works with the body, not the mind. Choose where you feel tension, and a calm voice guides your attention back and forth between that area and places of ease, with hand connection and gentle humming.</p>
 
-    <div class="summary">
-      <p><strong>In short:</strong> Somatic Flow does not collect, store, sell or share your personal information. There are no accounts, no ads, no analytics and no tracking. The little the app remembers stays on your own device.</p>
-    </div>
+    <!-- When the app is live, replace this <span> with:
+         <a class="play" href="https://play.google.com/store/apps/details?id=net.reliableits.somaticflow">Get it on Google Play</a> -->
+    <span class="play">Coming soon to Google Play</span>
+    <p class="note">Works fully offline · No account · No ads</p>
 
-    <h2>Who we are</h2>
-    <p>Somatic Flow is a guided somatic meditation app, available as an Android app and as a website at <a href="https://somaticflow.reliableits.net">somaticflow.reliableits.net</a>. It is published by Reliable IT ("we", "us").</p>
-
-    <h2>What stays on your device</h2>
-    <p>To show your session history, the app saves a short record of each session <strong>on your device only</strong>:</p>
-    <ul>
-      <li>the date and time of the session,</li>
-      <li>the charge area you chose (chest, belly, throat or head),</li>
-      <li>the session length and how much of it you completed.</li>
-    </ul>
-    <p>It may also remember your light/dark theme choice. This information never leaves your device and we cannot see it.</p>
-    <p><strong>To delete it:</strong> in the Android app, clear the app's storage in Android Settings or uninstall the app. On the website, clear this site's data in your browser settings.</p>
-
-    <h2>What we do not collect</h2>
-    <ul>
-      <li>No account, name, email address or contact details.</li>
-      <li>No health, fitness or biometric data. The app does not read sensors, your microphone or your camera.</li>
-      <li>No location.</li>
-      <li>No advertising identifiers, analytics or crash reporting.</li>
-      <li>No data is sold or shared with third parties.</li>
+    <ul class="features">
+      <li><strong>Start where you feel it</strong><span>Chest, belly, throat or head: the session centers on the area you choose.</span></li>
+      <li><strong>Pendulation</strong><span>34 guided steps move between that area and neutral, restful parts of the body, from your feet to the crown of your head.</span></li>
+      <li><strong>Hands and humming</strong><span>Warm your palms, rest your hands on the body, and hum with a gentle background tone.</span></li>
+      <li><strong>Private by design</strong><span>Your session history stays on your phone. Nothing is collected or shared.</span></li>
     </ul>
 
-    <h2>Android app</h2>
-    <p>The Android app contains everything it needs, including all narration audio, and works fully offline. It does not send any data from your device. Android lists the standard internet permission for the app because it is included by the framework the app is built with; the app does not use it to transmit information.</p>
-    <p>During a session the app keeps your screen awake so the session is not interrupted. This uses no personal information.</p>
-
-    <h2>Website</h2>
-    <p>The website is hosted on Cloudflare Pages. Like any web host, Cloudflare processes technical information needed to deliver the site and protect it from abuse, such as your IP address and browser type. We do not use this information to identify you, and we do not add any analytics or tracking to the site. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a> for how it handles this data.</p>
-    <p>The website uses your browser's local storage only for the on-device history and theme setting described above. It does not use cookies for tracking.</p>
-
-    <h2>Children</h2>
-    <p>Somatic Flow is intended for adults and is not directed to children under 13. We do not knowingly collect information from anyone, including children.</p>
-
-    <h2>Health notice</h2>
-    <p>Somatic Flow is a relaxation and body-awareness practice. It is not a medical device and is not a substitute for professional medical or psychological care. If you are in crisis, contact your local emergency services; in the United States you can call or text 988.</p>
-
-    <h2>Changes to this policy</h2>
-    <p>If this policy changes, we will update it on this page and change the effective date above.</p>
-
-    <h2>Contact</h2>
-    <p>Questions about this policy: <a href="mailto:diegoeg@reliableits.net">diegoeg@reliableits.net</a></p>
-
-    <a class="back" href="https://somaticflow.reliableits.net/">← Somatic Flow website</a>
+    <p class="notice">Somatic Flow is a relaxation and body-awareness practice. It is not a medical device and is not a substitute for professional medical or psychological care. If you are in crisis, contact your local emergency services; in the US, call or text 988.</p>
   </main>
+  <footer>
+    <a href="privacy/">Privacy Policy</a> · <a href="mailto:diegoeg@reliableits.net">Contact</a> · © 2026 Reliable IT
+  </footer>
 </body>
 </html>
